@@ -70,6 +70,8 @@ MessageBag.prototype.sprinkle = function(sel,f,insert){
   insert = insert || function(key,message,bag,sel,format,insert)
   {
       var $fg = $(sel).find('[name="'+key+'"]').parents('.form-group');
+      
+      $fg.addClass('has-error');
 
       var $ig = $fg.find('.input-group');
 
