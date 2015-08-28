@@ -64,9 +64,12 @@ MessageBag.prototype.count=function(k){
 MessageBag.prototype.getMessages=function(k,v){
   return this.m;
 };
+/**
+ * @todo use object instead of 50 parameters
+ */
 MessageBag.prototype.sprinkle = function(sel,f,insert){
   sel = sel||$('body');
-  f = f||'<div><span class="label label-danger">:message</span></div>';
+  f = f||'<div class="messagebag mb-sprinkled-item"><span class="label label-danger">:message</span></div>';
   insert = insert || function(key,message,bag,sel,format,insert)
   {
       var $fg = $(sel).find('[name="'+key+'"]').parents('.form-group');
