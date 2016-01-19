@@ -1,6 +1,9 @@
 # Laravel-MessageBag-JS
 Laravel's Illuminate\Support\MessageBag, except in Javascript
 
+## Requirements:
+ - jQuery ``.exists()``
+ - ``isEmpty()``
 
 ## Data Format
 Example 1:
